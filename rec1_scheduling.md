@@ -106,3 +106,6 @@ task1 >> task2
 (airflow_env) $ airflow scheduler
 ```
 
+<img width="1680" alt="airflow_dag_exam" src="https://user-images.githubusercontent.com/47958965/162626796-eda154c7-a166-4999-839e-6620042ded88.png">
+
+
