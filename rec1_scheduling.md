@@ -19,7 +19,8 @@ def helloWorld():
     print('Hello World')
     return
 
-```
+```  
+<br/>   
 
 이 함수를 스케쥴 걸기위해서는  
 &ensp;&ensp;&ensp;&ensp;(1)DAG를 설정하고,  
@@ -29,6 +30,7 @@ def helloWorld():
 
 > 혹시 크론탭 시간설정에 익숙하지 않다면 [crontab guru](https://crontab.guru/) 사이트를 통해 쉽게 확인 가능하니, 참고하면 좋다!  
 파라미터로 `@hourly` 와 같이 간단하게 주기배치를 설정할 수도 있지만, 결국 나중에 작업이 많아지게 되면 크론탭의 시간설정방식을 사용하게 되기에, 미리 익숙해지는 것도 나쁘지 않은 거 같다ㅎㅎ
+<br/>   
 
 ```python
 ## hello_world_dag.py
@@ -106,6 +108,7 @@ task1 >> task2
 
 ```bash
 (airflow_env) $ airflow scheduler
+(airflow_env) $ airflow webserver
 ```
 
 <img width="1680" alt="airflow_dag_exam" src="https://user-images.githubusercontent.com/47958965/162626796-eda154c7-a166-4999-839e-6620042ded88.png">
