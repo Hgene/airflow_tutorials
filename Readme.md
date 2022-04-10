@@ -22,7 +22,16 @@ Airbnb에서 제작한 workflow management tool로 특정 작업을 주기적으
 ### Airflow 설치방법  
 
 Ariflow를 설치하는 방법은 따로 정리해놓은 [Airflow 설치하기](https://github.com/Hgene/airflow_tutorials/blob/master/install_airflow.md) 글을 참고해보자..!
+<br/>  
 
+
+### Airflow로 스케쥴 걸어보기..!
+
+첫번째로는 간단한 Python 코드를 Airflow를 통해 스케쥴 걸어보는 작업을 진행해볼까 한다..!  
+차차 시리즈로 만들어볼 생각인데, 천천히 하나씩 해보시길!!ㅎ
+
+* [[1] Airflow로 Python code 스케쥴 걸기]()
+* 
 
 
 
