@@ -30,8 +30,8 @@ Ariflow를 설치하는 방법은 따로 정리해놓은 [Airflow 설치하기](
 첫번째로는 간단한 Python 코드를 Airflow를 통해 스케쥴 걸어보는 작업을 진행해볼까 한다..!  
 차차 시리즈로 만들어볼 생각인데, 천천히 하나씩 해보시길!!ㅎ
 
-* [[1] Airflow로 Python code 스케쥴 걸기]()
-* 
+* [[1] Airflow로 Python code 스케쥴 걸기](https://github.com/Hgene/airflow_tutorials/blob/master/rec1_scheduling.md)
+* [2]는 뭐하지..ㅎ
 
 
 
