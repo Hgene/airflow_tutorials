@@ -82,4 +82,9 @@ $ source "가상환경 디렉토리"/bin/activate
 ```bash
 (airflow_env) $ airflow scheduler
 (airflow_env) $ airflow webserver
-```
+```  
+<br/>    
+
+<img width="1670" alt="airflow_running" src="https://user-images.githubusercontent.com/47958965/162627292-b240adcb-5e02-4989-a398-37b483a9230c.png">
+
+
