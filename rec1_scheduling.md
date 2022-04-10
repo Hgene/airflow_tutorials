@@ -1,4 +1,4 @@
-### Python code 스케쥴 걸기
+## Python code 스케쥴 걸기
 
 지난 [Airflow 설치하기](https://github.com/Hgene/airflow_tutorials/blob/master/install_airflow.md) 글에서 언급했듯이 Airflow의 기본적인 디렉토리 구조는 다음과 같다.  
 <br/>    
