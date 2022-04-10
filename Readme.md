@@ -1,7 +1,11 @@
 ## Airflow 설치하는 방법..!
 
+![Airflow](https://airflow.apache.org/images/feature-image.png)
+
+
 ### Airflow란..!
 Airbnb에서 제작한 workflow management tool로 특정 작업을 주기적으로 자동으로 수행하고, 모니터링이 필요할 때 사용하는 툴이다. 복잡한 Pipeline을 가진 테스크가 조금만 많아져도 crontab으로 관리하기가 힘든데, 그 부분을 쉽게 해결해줄 수 있는 관리 엔진이다.  
+
 <br/>  
 
 
@@ -32,10 +36,10 @@ Airbnb에서 제작한 workflow management tool로 특정 작업을 주기적으
 <br/>    
 
 기초적인 파일구성은 아래와 같다.  
-airflow_workspace(관리폴더)  
-    - airflow  
-         ㄴ dags(스케쥴 코드관리폴더)  
-    ㄴ airflow_env(가상환경 폴더)  
+/airflow_workspace(관리폴더)  
+&ensp;&ensp;&ensp;&ensp;- /airflow  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;ㄴ /dags(스케쥴 코드관리폴더)  
+&ensp;&ensp;&ensp;&ensp;ㄴ /airflow_env(가상환경 폴더)  
 
 
 1. 먼저 가상환경을 활성화한 상태에서 airflow를 포함하여 필요한 패키지를 설치한다.
