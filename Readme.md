@@ -21,7 +21,7 @@ Airbnb에서 제작한 workflow management tool로 특정 작업을 주기적으
 
 ### Airflow 설치방법  
 
-Ariflow를 설치하는 방법은 따로 정리해놓은 [Airflow 설치하기](https://github.com/Hgene/airflow_tutorials/edit/master/install_airflow.md) 글을 참고해보자..!
+Ariflow를 설치하는 방법은 따로 정리해놓은 [Airflow 설치하기](https://github.com/Hgene/airflow_tutorials/blob/master/install_airflow.md) 글을 참고해보자..!
 
 
 
