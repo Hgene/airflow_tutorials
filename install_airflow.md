@@ -1,6 +1,8 @@
 ## Airflow 설치하는 방법..!
 
-![Airflow](https://airflow.apache.org/images/feature-image.png)
+<p align="center">
+  <img src="https://airflow.apache.org/images/feature-image.png" width="80%" height="80%" />
+</p>
 
 
 ### Airflow 설치방법  
