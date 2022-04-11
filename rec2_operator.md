@@ -108,7 +108,7 @@ task1 >> task2
 아래와 같이 정상적으로 Airflow schedule에 올라가고, 로그 output값에도 1부터 10까지의 합인 55가 정상적으로 실행되었음을 확인할 수 있다.  
 <br/>    
 
-<img width="1680" alt="hello_world_dag_bash" src="https://user-images.githubusercontent.com/47958965/162745350-9d4413aa-8494-436d-a686-f7dfe49c3da3.png">
+<img width="1680" alt="hello_world_dag_bash" src="https://user-images.githubusercontent.com/47958965/162745350-9d4413aa-8494-436d-a686-f7dfe49c3da3.png" >
 <br/>    
 
 <img width="1680" alt="hello_world_dag_bash_log" src="https://user-images.githubusercontent.com/47958965/162745954-b4ff2ac2-5b38-4389-9c8e-a02303fe5e90.png">
