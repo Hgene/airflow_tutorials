@@ -18,7 +18,7 @@ $ date
 위의 bash 명령어를 DAG객체로 변환하는 것은 아래와 같이 수행하면 된다. 
 
 ```python
-## print_date.py
+## hello_world_dag_bash.py
 
 from ast import operator
 from airflow import DAG
@@ -56,6 +56,64 @@ task1
 (airflow_env) $ airflow webserver
 ```
 <br/>    
+<br/>    
+
+
+이렇게 bashOperator를 사용해야하는 이유는 가끔은 서로다른 가상환경의 파이썬 구동을 필요로 할 때도 있기 때문이다.  
+앞서 나온 bash 예제에 더하여, 1부터 10까지 더하고, 해당값을 return 하는 함수가 있다고 가정하자  
+
+```python
+## src/exam_py/add_to_ten.py
+
+def add_int(x_int):
+    return sum([x for x in range(int(x_int)+1)])
+
+if __name__=='__main__':
+    print(add_int(10))
+```
+
+<br/>    
+
+```python
+from ast import operator
+from airflow import DAG
+from airflow.operators.bash import BashOperator
+from datetime import datetime
+
+
+#(1) DAG를 정의
+with DAG(dag_id="hello_world_dag_bash", #Airflow에서 보이는 DAG(테스크) 이름
+        start_date=datetime(2021,1,1), 
+        schedule_interval="16 * * * *", #crontab 문법에 맞추어 작성, 매시간 16분에 실행
+        catchup=False) as dag:
+        
+    #(2) task를 정의
+    task1 = BashOperator(
+        task_id="hello_world", 
+        bash_command='date'
+    )
+    
+    task2 = BashOperator(
+        task_id="add_ten_py", 
+        bash_command='~/airflow_workspace/airflow_env/bin/python  ~/airflow_workspace/airflow/dags/src/exam_py/add_to_ten.py'
+        #bash_command= '파이썬가상환경_디렉토리  실행할.py위치 '
+    )
+
+#(3)실행순서에 맞추어 Pipeline 구성
+task1 >> task2
+
+```
+<br/>    
+
+아래와 같이 정상적으로 Airflow schedule에 올라가고, 로그 output값에도 1부터 10까지의 합인 55가 정상적으로 실행되었음을 확인할 수 있다.  
+<br/>    
+
+<img width="1680" alt="hello_world_dag_bash" src="https://user-images.githubusercontent.com/47958965/162745350-9d4413aa-8494-436d-a686-f7dfe49c3da3.png">
+<br/>    
+
+<img width="1680" alt="hello_world_dag_bash_log" src="https://user-images.githubusercontent.com/47958965/162745954-b4ff2ac2-5b38-4389-9c8e-a02303fe5e90.png">
+
+
 
 
 
