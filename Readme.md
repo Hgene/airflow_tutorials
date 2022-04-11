@@ -1,7 +1,8 @@
 ## Airflow 경험해보기..!
 
-![Airflow](https://airflow.apache.org/images/feature-image.png)
-
+<p align="center">
+  <img src="https://airflow.apache.org/images/feature-image.png" width="80%" height="80%" />
+</p>
 
 ### Airflow란..!
 Airbnb에서 제작한 workflow management tool로 특정 작업을 주기적으로 자동으로 수행하고, 모니터링이 필요할 때 사용하는 툴이다. 복잡한 Pipeline을 가진 테스크가 조금만 많아져도 crontab으로 관리하기가 힘든데, 그 부분을 쉽게 해결해줄 수 있는 관리 엔진이다.  
