@@ -115,7 +115,8 @@ task1 >> task2
 ```
 <br/>    
 
-이렇게 생성된 DAG는 아래와 같이 정상적으로 Airflow schedule에 올라가고, 로그 output값에도 1부터 10까지의 합인 55가 정상적으로 실행되었음을 확인할 수 있다.  
+이렇게 생성된 DAG는 아래와 같이 정상적으로 `Airflow schedule` 에 올라가고,   
+로그(log) output값에도 1부터 10까지의 합인 `55` 가 정상적으로 실행되었음을 확인할 수 있다.  
 <br/>    
 
 <img width="1680" alt="hello_world_dag_bash" src="https://user-images.githubusercontent.com/47958965/162745350-9d4413aa-8494-436d-a686-f7dfe49c3da3.png" >
