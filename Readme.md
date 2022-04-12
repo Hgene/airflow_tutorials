@@ -33,6 +33,7 @@ Ariflow를 설치하는 방법은 따로 정리해놓은 [Airflow 설치하기](
 
 * [[1] Airflow로 Python code 스케쥴 걸기](https://github.com/Hgene/airflow_tutorials/blob/master/rec1_scheduling.md)
 * [[2] Operator 구성하기(pythonOperator/bashOperator)](https://github.com/Hgene/airflow_tutorials/blob/master/rec2_operator.md)
+* [3] 책에서 해보고 싶은 내용 참고해서 추가해보기
 
 
 
